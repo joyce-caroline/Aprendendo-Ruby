@@ -1,11 +1,8 @@
-# Missão 2 - Crie um programa que receba o nome e idade de uma pessoa 
-# e no final exiba estes dois dados em uma única frase.
-
-#entrada de dados
-print "Digite o seu nome : "
-name = gets.chomp
-print "Digite a sua idade:"
-age = gets.chomp.to_i
-
-#saída de Dados
-puts "Seu nome é #{name} e você tem #{age} anos."
+print "Digite o ano em que você nasceu: "
+ano_nascimento = gets.to_i
+print "Em que ano estamos? "
+ano_atual = gets.to_i
+idade = ano_atual - ano_nascimento
+puts "Você tem #{idade} anos." 
+print "E você terá #{2050 - ano_nascimento} anos em 2050 :) \n"
+print "Tchaaau!" 
